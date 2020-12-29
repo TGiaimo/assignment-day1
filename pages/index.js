@@ -14,9 +14,16 @@ export default function Home() {
   const totalCheapAnimalFee = cheapAnimals.reduce(sumTogether, 0)
 
   return (
-    <div>
-      <p class="capitalize grid grid-cols-3 gap-4 justify-items-center">{cheapAnimalsFormatted}</p>
-      <h2 class="uppercase flex justify-center border-t-8">Total Price: {totalCheapAnimalFee}</h2>
+    <div class="bg-gray-200">
+    <div class="container mx-auto">
+      <div class="uppercase text-center text-2xl"><b>pets under $20</b></div>
+      <body class="">
+        <div class="uppercase grid grid-cols-3 place-content-center gap-4">
+          {cheapAnimalsFormatted}
+        </div>
+        <h2 class="uppercase text-center text-xl">Total Price of Pets Listed: ${totalCheapAnimalFee}</h2>
+      </body>
+    </div>
     </div>
   )
 }
