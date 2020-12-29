@@ -17,13 +17,11 @@ export default function Home() {
     <div class="bg-gray-200">
     <div class="container mx-auto">
       <div class="uppercase text-center text-2xl"><b>pets under $20</b></div>
-      <body class="">
         <div class="uppercase grid grid-cols-3 place-content-center gap-4">
           {cheapAnimalsFormatted}
         </div>
         <h2 class="uppercase text-center text-xl">Total Price of Pets Listed: ${totalCheapAnimalFee}</h2>
-      </body>
-    </div>
+      </div>
     </div>
   )
 }
